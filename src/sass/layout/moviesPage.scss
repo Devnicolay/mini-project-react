@@ -1,0 +1,71 @@
+.main-movies {
+  background-color: white;
+  .container-movies {
+    background-color: white;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .movie-card {
+      background: rgb(197, 194, 194);
+      border-radius: 10px;
+      margin-bottom: 2em;
+      padding-left: 2em;
+      width: 340px;
+      height: 340px;
+      border-radius: 10px;
+      .movie-card-title {
+        width: 95%;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 800;
+      }
+      .container-like {
+        display: flex;
+        justify-content: space-around;
+      }
+      .container-buttons {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* Mobile : For screen smaller than 576px */
+@media screen and (max-width: 576px) {
+  .main-movies {
+    background-color: transparent;
+    .container-movies {
+      padding: 0;
+      justify-content: center;
+      .movie-card {
+        width: 351px;
+        height: 255px;
+      }
+    }
+  }
+}
+
+/* For screen between 576px and 900px */
+@media screen and (min-width: 577px) and (max-width: 900px) {
+  .main-movies {
+    .container-movies {
+      justify-content: center;
+      .movie-card {
+        margin-right: 2em;
+      }
+    }
+  }
+}
+
+/* Mobile : For screen smaller than 400px */
+@media screen and (max-width: 400px) {
+  .main-movies {
+    .container-movies {
+      .movie-card {
+        width: 300px;
+      }
+    }
+  }
+}
